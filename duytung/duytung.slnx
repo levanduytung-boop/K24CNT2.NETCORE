@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../letungmvc/letungmvc.csproj" />
+  <Project Path="duytung.csproj" />
+</Solution>
