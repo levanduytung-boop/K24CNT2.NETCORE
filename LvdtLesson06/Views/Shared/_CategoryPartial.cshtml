@@ -1,0 +1,31 @@
+@{
+    var categories = new List<string>
+    {
+        "Áo dài",
+        "Áo đồng",
+        "Túi xách",
+        "Đồng hồ",
+        "Ví da",
+        "Thắt lưng da",
+        "Thời trang",
+        "Tủ lạnh",
+        "Tivi",
+        "Thảm",
+        "Quạt điện",
+        "Lò sưởi"
+    };
+}
+
+<div class="category-box">
+    <div class="category-header">
+        Danh mục sản phẩm
+    </div>
+    <ul class="category-list">
+        @foreach (var item in categories)
+        {
+            <li class="category-item">
+                <a href="javascript:void(0);">@item</a>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,32 @@
+@model IEnumerable<LvdtLesson06.Models.Product>
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="row gx-4">
+    <!-- Cột trái: Khung Danh mục sản phẩm (load từ Partial View) và Banner quảng cáo -->
+    <div class="col-lg-3 col-md-4 mb-3">
+        <div class="sidebar-wrapper">
+            <!-- 1. Danh mục sản phẩm: Load từ Partial View -->
+            <partial name="_CategoryPartial" />
+
+            <!-- Banner quảng cáo bên dưới danh mục như trong ảnh đề bài -->
+            <div class="sidebar-banner mt-3">
+                <img src="~/images/banner.png" alt="Banner Faster" class="img-fluid banner-img" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Cột phải: Sản phẩm mới nhất & Sản phẩm bán chạy -->
+    <div class="col-lg-9 col-md-8">
+        <!-- 2. Khu vực Sản phẩm mới nhất: Load từ View Action của Controller (trả về Partial View) -->
+        <div class="mb-4">
+            <partial name="_NewProductPartial" model="Model" />
+        </div>
+
+        <!-- 3. Khu vực Sản phẩm bán chạy: Load từ View Component HotProduct -->
+        <div class="mb-4">
+            @await Component.InvokeAsync("HotProduct")
+        </div>
+    </div>
+</div>

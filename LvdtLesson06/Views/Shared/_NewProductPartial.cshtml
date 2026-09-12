@@ -1,0 +1,27 @@
+@model IEnumerable<LvdtLesson06.Models.Product>
+
+<div class="product-section new-product-section">
+    <div class="section-header new-product-header">
+        Sản phẩm mới nhất
+    </div>
+    <div class="section-content">
+        <div class="row g-3">
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <div class="col-12 col-md-4">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="@item.Image" alt="@item.Name" class="img-fluid product-img" />
+                            </div>
+                            <div class="product-info">
+                                <h6 class="product-title">@item.Name</h6>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

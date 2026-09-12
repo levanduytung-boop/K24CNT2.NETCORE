@@ -1,0 +1,237 @@
+/* Cấu hình chung */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* =======================================
+   1. NAVBAR TRÊN CÙNG (DEMO LAB)
+   ======================================= */
+.custom-navbar {
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.custom-navbar .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-brand {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 10px 18px 10px 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-item-custom a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 16px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.nav-item-custom a:hover {
+    color: #ffffff;
+    background-color: #383838;
+}
+
+.nav-item-custom.active a {
+    color: #ffffff;
+    background-color: #1f1f1f;
+    font-weight: 500;
+}
+
+/* =======================================
+   2. CỘT TRÁI: SIDEBAR & CATEGORY
+   ======================================= */
+.sidebar-wrapper {
+    border: 2px solid #8cc63f; /* Viền xanh cốm đặc trưng như ảnh mẫu */
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.category-box {
+    width: 100%;
+}
+
+.category-header {
+    background-color: #008fa6; /* Xanh ngọc / cyan đậm như ảnh mẫu */
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 9px 14px;
+    border-radius: 1px;
+}
+
+.category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.category-item {
+    border-top: 1px solid #f0f0f0;
+}
+
+.category-item a {
+    display: block;
+    padding: 7px 14px;
+    color: #495057;
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: all 0.2s;
+}
+
+.category-item a:hover {
+    background-color: #f1f8fc;
+    color: #0078d7;
+    padding-left: 18px;
+}
+
+.sidebar-banner {
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+}
+
+/* =======================================
+   3. CỘT PHẢI: KHU VỰC SẢN PHẨM
+   ======================================= */
+.product-section {
+    border: 2px solid #5bb2e8; /* Viền xanh dương sáng bao quanh khung sản phẩm */
+    background-color: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.new-product-header {
+    background-color: #0078d7; /* Xanh dương đậm tiêu đề sản phẩm mới */
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 9px 16px;
+}
+
+.section-content {
+    padding: 16px 14px;
+}
+
+/* Khung card từng sản phẩm */
+.product-card {
+    border: 1px solid #e2e5e8;
+    background-color: #ffffff;
+    padding: 12px 10px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.product-img-wrapper {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product-img {
+    max-height: 120px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    margin-top: auto;
+}
+
+.product-title {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* =======================================
+   4. FOOTER: GIỚI THIỆU & LIÊN HỆ
+   ======================================= */
+.custom-footer {
+    background-color: #2b2b2b;
+    color: #a8a8a8;
+    padding: 24px 0 30px;
+    margin-top: auto;
+    border-top: 2px solid #1e1e1e;
+}
+
+.footer-col {
+    padding: 0 15px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: #9c9c9c;
+    margin-bottom: 0;
+    text-align: justify;
+}
