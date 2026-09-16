@@ -1,0 +1,63 @@
+﻿@model IEnumerable<LvdtLesson08Models.Models.LvdtMember>
+
+@{
+    ViewData["Title"] = "Danh sách thành viên";
+}
+
+<div class="card p-3">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1> 
+        <a asp-action="LvdtCreate">Thêm  mới</a>
+    </div>
+
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LvdtMemberId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LvdtUserName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LvdtPassword)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LvdtFullName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LvdtEmail)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LvdtMemberId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LvdtUserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LvdtPassword)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LvdtFullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LvdtEmail)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Sửa", "LvdtEdit", new {  id=item.LvdtMemberId }) |
+                        @Html.ActionLink("Xem chi tiết", "LvdtDetails", new { id = item.LvdtMemberId }) |
+                            @Html.ActionLink("Xóa", "LvdtDelete", new { id = item.LvdtMemberId })
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
