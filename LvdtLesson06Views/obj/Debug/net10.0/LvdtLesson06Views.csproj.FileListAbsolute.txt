@@ -97,3 +97,4 @@ E:\K24CNT2.NETCORE\LvdtLesson06Views\obj\Debug\net10.0\refint\LvdtLesson06Views.
 E:\K24CNT2.NETCORE\LvdtLesson06Views\obj\Debug\net10.0\LvdtLesson06Views.pdb
 E:\K24CNT2.NETCORE\LvdtLesson06Views\obj\Debug\net10.0\LvdtLesson06Views.genruntimeconfig.cache
 E:\K24CNT2.NETCORE\LvdtLesson06Views\obj\Debug\net10.0\ref\LvdtLesson06Views.dll
+E:\K24CNT2.NETCORE\LvdtLesson06Views\obj\Debug\net10.0\LvdtLess.7B8D732B.Up2Date
