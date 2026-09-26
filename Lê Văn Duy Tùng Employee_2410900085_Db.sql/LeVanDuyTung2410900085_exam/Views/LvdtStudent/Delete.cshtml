@@ -1,0 +1,72 @@
+﻿@model LeVanDuyTung2410900085_exam.Models.LvdtStudent
+
+@{
+    ViewData["Title"] = "Xóa sinh viên";
+}
+
+<nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb bg-white p-3 rounded-3 shadow-sm">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index"><i class="bi bi-house-door"></i> Trang chủ</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Danh sách sinh viên</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Xóa #@Model.Id</li>
+    </ol>
+</nav>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden border-danger">
+            <div class="card-header bg-danger text-white py-3 px-4">
+                <h4 class="mb-0 fw-bold"><i class="bi bi-trash-fill me-2"></i>XÁC NHẬN XÓA SINH VIÊN</h4>
+            </div>
+            <div class="card-body p-4">
+                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill fs-3 me-3"></i>
+                    <div>
+                        <strong>Cảnh báo:</strong> Bạn có chắc chắn muốn xóa thông tin sinh viên này khỏi hệ thống không? Hành động này không thể hoàn tác!
+                    </div>
+                </div>
+
+                <table class="table table-bordered align-middle">
+                    <tbody>
+                        <tr>
+                            <th class="bg-light text-secondary" style="width: 35%;">Mã sinh viên (Id):</th>
+                            <td class="fw-bold">@Model.Id</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary">Họ và tên:</th>
+                            <td class="fw-bold text-danger fs-5">@Model.LvdtName</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary">Giới tính:</th>
+                            <td>@(Model.LvdtGender == true ? "Nam" : "Nữ")</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary">Ngày sinh:</th>
+                            <td>@(Model.LvdtBirthDay?.ToString("dd/MM/yyyy") ?? "-")</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary">Email:</th>
+                            <td>@Model.LvdtEmail</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary">Điện thoại:</th>
+                            <td>@Model.LvdtPhone</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="d-flex gap-2 justify-content-end border-top pt-3">
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-x-circle me-1"></i> Hủy bỏ
+                        </a>
+                        <button type="submit" class="btn btn-danger px-4">
+                            <i class="bi bi-trash-fill me-1"></i> Xác nhận xóa
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

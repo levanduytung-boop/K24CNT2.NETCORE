@@ -1,0 +1,106 @@
+﻿@model LeVanDuyTung2410900085_exam.Models.LvdtStudent
+
+@{
+    ViewData["Title"] = "Chi tiết sinh viên";
+}
+
+<nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb bg-white p-3 rounded-3 shadow-sm">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index"><i class="bi bi-house-door"></i> Trang chủ</a></li>
+        <li class="breadcrumb-item"><a asp-action="Index">Danh sách sinh viên</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Chi tiết #@Model.Id</li>
+    </ol>
+</nav>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-info text-white py-3 px-4">
+                <h4 class="mb-0 fw-bold"><i class="bi bi-person-lines-fill me-2"></i>CHI TIẾT THÔNG TIN SINH VIÊN</h4>
+            </div>
+            <div class="card-body p-4">
+                <table class="table table-bordered table-striped align-middle">
+                    <tbody>
+                        <tr>
+                            <th class="bg-light text-secondary" style="width: 35%;"><i class="bi bi-key me-2 text-primary"></i>Mã sinh viên (Id):</th>
+                            <td class="fw-bold">@Model.Id</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-person me-2 text-primary"></i>Họ và tên:</th>
+                            <td class="fw-bold text-primary fs-5">@Model.LvdtName</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-gender-ambiguous me-2 text-primary"></i>Giới tính:</th>
+                            <td>
+                                @if (Model.LvdtGender == true)
+                                {
+                                    <span class="badge bg-primary fs-6"><i class="bi bi-gender-male"></i> Nam</span>
+                                }
+                                else if (Model.LvdtGender == false)
+                                {
+                                    <span class="badge bg-danger fs-6"><i class="bi bi-gender-female"></i> Nữ</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Khác</span>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-calendar-event me-2 text-primary"></i>Ngày sinh:</th>
+                            <td>@(Model.LvdtBirthDay?.ToString("dd/MM/yyyy") ?? "-")</td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-envelope me-2 text-primary"></i>Email:</th>
+                            <td>
+                                @if (!string.IsNullOrEmpty(Model.LvdtEmail))
+                                {
+                                    <a href="mailto:@Model.LvdtEmail">@Model.LvdtEmail</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">-</span>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-telephone me-2 text-primary"></i>Số điện thoại:</th>
+                            <td>
+                                @if (!string.IsNullOrEmpty(Model.LvdtPhone))
+                                {
+                                    <a href="tel:@Model.LvdtPhone">@Model.LvdtPhone</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">-</span>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="bg-light text-secondary"><i class="bi bi-activity me-2 text-primary"></i>Trạng thái:</th>
+                            <td>
+                                @if (Model.LvdtActive)
+                                {
+                                    <span class="badge bg-success fs-6"><i class="bi bi-check-circle me-1"></i>Đang hoạt động</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary fs-6"><i class="bi bi-x-circle me-1"></i>Tạm dừng / Đã khóa</span>
+                                }
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="d-flex gap-2 justify-content-end border-top pt-3">
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i> Quay lại
+                    </a>
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning fw-semibold">
+                        <i class="bi bi-pencil-square me-1"></i> Chỉnh sửa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

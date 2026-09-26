@@ -1,0 +1,124 @@
+﻿@model IEnumerable<LeVanDuyTung2410900085_exam.Models.LvdtEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên (HvtEmployee)";
+}
+
+<nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb bg-white p-3 rounded-3 shadow-sm">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-decoration-none"><i class="bi bi-house-door"></i> Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Danh sách nhân viên (HvtEmployee)</li>
+    </ol>
+</nav>
+
+<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+    <div class="card-header bg-success text-white py-3 px-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div>
+            <h4 class="mb-0 fw-bold"><i class="bi bi-person-workspace me-2"></i>QUẢN LÝ DANH SÁCH NHÂN VIÊN (HvtEmployee)</h4>
+            <small class="text-white-50">Yêu cầu 1 & CRUD: Bảng dữ liệu HvtEmployee / LvdtEmployee</small>
+        </div>
+        <a asp-action="Create" class="btn btn-light text-success fw-bold shadow-sm">
+            <i class="bi bi-plus-circle-fill me-1"></i> Thêm mới nhân viên
+        </a>
+    </div>
+
+    <div class="card-body p-4">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped table-bordered align-middle text-center mb-0">
+                <thead class="table-success text-nowrap">
+                    <tr>
+                        <th style="width: 70px;">Mã (Id)</th>
+                        <th class="text-start">Họ và tên</th>
+                        <th>Giới tính</th>
+                        <th>Ngày sinh</th>
+                        <th class="text-start">Email</th>
+                        <th>Điện thoại</th>
+                        <th>Trạng thái</th>
+                        <th style="width: 220px;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@item.Id</td>
+                            <td class="text-start fw-semibold text-success">
+                                <i class="bi bi-person-badge me-1 text-secondary"></i>@item.LvdtName
+                            </td>
+                            <td>
+                                @if (item.LvdtGender == true)
+                                {
+                                    <span class="badge bg-primary"><i class="bi bi-gender-male"></i> Nam</span>
+                                }
+                                else if (item.LvdtGender == false)
+                                {
+                                    <span class="badge bg-danger"><i class="bi bi-gender-female"></i> Nữ</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Khác</span>
+                                }
+                            </td>
+                            <td>@(item.LvdtBirthDay?.ToString("dd/MM/yyyy") ?? "-")</td>
+                            <td class="text-start">
+                                @if (!string.IsNullOrEmpty(item.LvdtEmail))
+                                {
+                                    <a href="mailto:@item.LvdtEmail" class="text-decoration-none"><i class="bi bi-envelope me-1"></i>@item.LvdtEmail</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">-</span>
+                                }
+                            </td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(item.LvdtPhone))
+                                {
+                                    <a href="tel:@item.LvdtPhone" class="text-decoration-none"><i class="bi bi-telephone me-1"></i>@item.LvdtPhone</a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">-</span>
+                                }
+                            </td>
+                            <td>
+                                @if (item.LvdtActive)
+                                {
+                                    <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i>Hoạt động</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary"><i class="bi bi-x-circle me-1"></i>Đã nghỉ</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning" title="Chỉnh sửa">
+                                        <i class="bi bi-pencil-square"></i> Sửa
+                                    </a>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info" title="Xem chi tiết">
+                                        <i class="bi bi-eye"></i> Xem
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger" title="Xóa">
+                                        <i class="bi bi-trash"></i> Xóa
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="8" class="text-center py-4 text-muted">
+                            <i class="bi bi-inbox fs-2 d-block mb-2"></i>
+                            Chưa có dữ liệu nhân viên nào. Vui lòng nhấn nút <strong>Thêm mới</strong>!
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

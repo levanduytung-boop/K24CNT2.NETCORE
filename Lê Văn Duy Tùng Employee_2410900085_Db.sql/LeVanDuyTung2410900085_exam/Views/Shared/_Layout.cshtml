@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LeVanDuyTung2410900085_exam</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm mb-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-mortarboard-fill fs-4 text-warning"></i>
+                    <span>LVDT_2410900085_exam</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door-fill me-1"></i> Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" asp-area="" asp-controller="Home" asp-action="HvtAbout">
+                                <i class="bi bi-person-badge-fill me-1"></i> Thông tin sinh viên (HvtAbout)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" asp-area="" asp-controller="LvdtStudents" asp-action="Index">
+                                <i class="bi bi-people-fill me-1"></i> Danh sách sinh viên (HvtStudent)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fw-semibold" asp-area="" asp-controller="LvdtEmployees" asp-action="Index">
+                                <i class="bi bi-person-workspace me-1"></i> Danh sách nhân viên (HvtEmployee)
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center text-white-50 small">
+                        <span class="badge bg-light text-dark px-3 py-2 fw-semibold shadow-sm">
+                            <i class="bi bi-person-circle text-primary me-1"></i> Lê Văn Duy Tùng - 2410900085
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container flex-grow-1 pb-4">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer bg-white border-top py-3 text-muted mt-auto shadow-sm">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <span>&copy; 2026 - <strong>Lê Văn Duy Tùng</strong> (MSV: <strong>2410900085</strong>) - Lớp <strong>K24CNT2</strong></span>
+            </div>
+            <div class="col-md-6 text-end">
+                <span class="badge bg-primary me-2">ASP.NET Core MVC 10</span>
+                <span class="badge bg-success">SQL Server 2022</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
