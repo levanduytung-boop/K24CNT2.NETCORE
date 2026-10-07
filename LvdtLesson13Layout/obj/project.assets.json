@@ -4812,11 +4812,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "projectUniqueName": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "projectName": "LvdtLesson13Layout",
-      "projectPath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "projectPath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "packagesPath": "C:\\Users\\levan\\.nuget\\packages\\",
-      "outputPath": "E:\\LvdtLesson13Layout\\obj\\",
+      "outputPath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

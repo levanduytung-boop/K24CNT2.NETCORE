@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LvdtLesson13Layout")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05fb1364cafd4898cc1fc090f718bcc0d8036129")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aab2ea7c29b04f7772d93ff3df24b329ca8f5f1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("LvdtLesson13Layout")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LvdtLesson13Layout")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

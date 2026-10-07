@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zC1OsrDBjls=",
+  "dgSpecHash": "QBU9miGFltE=",
   "success": true,
-  "projectFilePath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+  "projectFilePath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\levan\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\levan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -114,9 +114,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Packaging' 6.11.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "projectPath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "filePath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -126,9 +126,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Protocol' 6.11.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "projectPath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "warningLevel": 1,
-      "filePath": "E:\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
+      "filePath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\LvdtLesson13Layout.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"

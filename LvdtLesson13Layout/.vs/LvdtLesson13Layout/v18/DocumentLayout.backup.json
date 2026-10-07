@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\LvdtLesson13Layout\\",
+  "WorkspaceRootPath": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{588FAB26-0142-4E63-A3B0-8B8004AB4771}|LvdtLesson13Layout.csproj|e:\\lvdtlesson13layout\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{588FAB26-0142-4E63-A3B0-8B8004AB4771}|LvdtLesson13Layout.csproj|e:\\k24cnt2.netcore\\lvdtlesson13layout\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{588FAB26-0142-4E63-A3B0-8B8004AB4771}|LvdtLesson13Layout.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\LvdtLesson13Layout\\Program.cs",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\LvdtLesson13Layout\\Program.cs",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson13Layout\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
