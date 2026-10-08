@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Demo Lab - LvdtLesson06</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LvdtLesson06.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Thanh menu trên cùng theo mẫu ảnh -->
+    <header>
+        <nav class="custom-navbar">
+            <div class="container d-flex align-items-center">
+                <a class="nav-brand" asp-area="" asp-controller="Home" asp-action="Index">DEMO LAB</a>
+                <ul class="nav-menu list-unstyled d-flex mb-0">
+                    <li class="nav-item-custom active">
+                        <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+                    </li>
+                    <li class="nav-item-custom">
+                        <a href="javascript:void(0);">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item-custom">
+                        <a href="javascript:void(0);">Liên hệ</a>
+                    </li>
+                    <li class="nav-item-custom">
+                        <a href="javascript:void(0);">Sản phẩm</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Thân trang web -->
+    <div class="container my-3">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Cuối trang: 2 phần GIỚI THIỆU và LIÊN HỆ theo mẫu ảnh -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-col">
+                    <h6 class="footer-title">GIỚI THIỆU</h6>
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab suscipit deserunt mollitia reiciendis, nobis iure aliquam velit et laboriosam ducimus veritatis corporis eat, dolores aperiam! Officiis impedit provident laboriosam.
+                    </p>
+                </div>
+                <div class="col-md-6 footer-col">
+                    <h6 class="footer-title">LIÊN HỆ</h6>
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit amet suscipit quasi quisquam impedit magni molestiae. Dolores, aliquid commodi ut esse eos voluptatem nisi facilis dolorem, repudiandae culpa ea quidem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

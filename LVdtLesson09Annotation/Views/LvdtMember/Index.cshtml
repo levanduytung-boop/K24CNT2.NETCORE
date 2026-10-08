@@ -1,0 +1,6 @@
+@model IEnumerable<LvdtMember>
+@{ ViewData["Title"] = "Danh sách thành viên"; }
+<h1>Danh sách thành viên</h1><p><a class="btn btn-primary" asp-action="Create">Đăng ký mới</a></p>
+<table class="table table-striped"><thead><tr><th>Mã</th><th>Tên đăng nhập</th><th>Họ và tên</th><th>Email</th><th>Số điện thoại</th><th>Ngày sinh</th></tr></thead><tbody>
+@foreach (var item in Model) { <tr><td>@item.LvdtMemberId</td><td>@item.LvdtMemberName</td><td>@item.LvdtFullName</td><td>@item.LvdtEmail</td><td>@item.LvdtPhoneNumber</td><td>@item.LvdtBirthday.ToString("dd/MM/yyyy")</td></tr> }
+</tbody></table>

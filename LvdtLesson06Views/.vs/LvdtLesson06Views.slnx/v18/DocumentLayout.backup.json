@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\views\\lvdthome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:views\\lvdthome\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\views\\lvdthome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:views\\lvdthome\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\controllers\\lvdthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:controllers\\lvdthomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\views\\shared\\_lvdtfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:views\\shared\\_lvdtfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\viewcomponents\\categoryviewcomponents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:viewcomponents\\categoryviewcomponents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\lvdtlesson06views.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:lvdtlesson06views.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|e:\\k24cnt2.netcore\\lvdtlesson06views\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC5480E3-D7F9-6A61-F867-193DF8E80AE4}|LvdtLesson06Views.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\LvdtHome\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\LvdtHome\\Index.cshtml",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\LvdtHome\\Index.cshtml",
+              "RelativeToolTip": "Views\\LvdtHome\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-23T18:45:35.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\LvdtHome\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\LvdtHome\\About.cshtml",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\LvdtHome\\About.cshtml",
+              "RelativeToolTip": "Views\\LvdtHome\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-23T18:45:33.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LvdtHomeController.cs",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Controllers\\LvdtHomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LvdtHomeController.cs",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Controllers\\LvdtHomeController.cs",
+              "RelativeToolTip": "Controllers\\LvdtHomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T18:45:24.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LvdtFooter.cshtml",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\_LvdtFooter.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LvdtFooter.cshtml",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\_LvdtFooter.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LvdtFooter.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T07:31:39.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T06:55:07.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Components\\Category\\Default.cshtml",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Views\\Shared\\Components\\Category\\Default.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Components\\Category\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-12T06:53:50.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryViewComponents.cs",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\ViewComponents\\CategoryViewComponents.cs",
+              "RelativeDocumentMoniker": "ViewComponents\\CategoryViewComponents.cs",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\ViewComponents\\CategoryViewComponents.cs",
+              "RelativeToolTip": "ViewComponents\\CategoryViewComponents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:45:12.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LvdtLesson06Views.csproj",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\LvdtLesson06Views.csproj",
+              "RelativeDocumentMoniker": "LvdtLesson06Views.csproj",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\LvdtLesson06Views.csproj",
+              "RelativeToolTip": "LvdtLesson06Views.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-12T06:41:47.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "E:\\K24CNT2.NETCORE\\LvdtLesson06Views\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T06:39:29.584Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../LvdtLesson02Theory/LvdtLesson02Theory.csproj" />
+  <Project Path="LvdtLesson02Review.csproj" />
+</Solution>

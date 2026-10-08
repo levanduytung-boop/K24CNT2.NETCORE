@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Thông  tin member";
+    var member = Model as LvdtLesson07Models.Models.DataModels.LvdtMember;
+}
+
+<div class="alert alert-info">
+    <h1>@ViewData["Title"]</h1>
+    @* <p>Member id: @ViewBag.Member.LvdtMemberId</p>
+    <p>UserName: @ViewBag.Member.LvdtUserName</p>
+    <p>UserName: @ViewBag.Member.LvdtPassword</p>
+    <p>UserName: @ViewBag.Member.LvdtFullName</p>
+    <p>UserName: @ViewBag.Member.LvdtEmail</p> *@
+
+    <p>Memberid: @member.LvdtMemberId</p>
+    <p>UserName: @member.LvdtUserName</p>
+    <p>UserName: @member.LvdtPassword</p>
+    <p>UserName: @member.LvdtFullName</p>
+    <p>UserName: @member.LvdtEmail</p>
+</div>
+
